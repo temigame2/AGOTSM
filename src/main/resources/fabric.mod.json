@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-tech-mod",
+  "version": "${version}",
+  "name": "Bio-Tech Mod",
+  "description": "",
+  "authors": [
+    "Temi"
+  ],
+  "contact": {
+    "repo": "https://github.com/boble/Bio-Tech-Mod"
+  },
+  "license": "MIT",
+  "icon": "assets/bio-tech-mod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "org.kyou.biotechmod.BioTechModClient"
+    ],
+    "main": [
+      "org.kyou.biotechmod.BioTechMod"
+    ],
+    "fabric-datagen": [
+      "org.kyou.biotechmod.BioTechModDataGenerator"
+    ]
+  },
+  "mixins": [
+    "biotechmod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
